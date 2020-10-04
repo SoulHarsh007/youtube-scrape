@@ -5,9 +5,10 @@
   "main": "server.js",
   "author": "SoulHarsh007",
   "dependencies": {
+    "cheerio": "latest",
     "express": "latest",
     "request": "latest",
-    "cheerio": "latest"
+    "ytpl": "latest"
   },
   "devDependencies": {
     "eslint": "7.10.0",
