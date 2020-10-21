@@ -1,6 +1,7 @@
 /* eslint-disable no-prototype-builtins */
 const centra = require('@nia3208/centra');
 const scrapper = async params => {
+  const results = [];
   const html = centra('https://www.youtube.com/results')
     .header(
       'User-Agent',
@@ -49,7 +50,7 @@ const scrapper = async params => {
       )
       .map(x => x.itemSectionRenderer.contents)[0]
       .filter(x => x.hasOwnProperty('videoRenderer'))
-      .forEach(x => parser(x.videoRenderer));
+      .forEach(x => results.push(parser(x.videoRenderer)));
   }
 };
 module.exports = scrapper;
