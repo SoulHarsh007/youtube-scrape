@@ -1,3 +1,3 @@
 # YouTube Scrape
 
-A YouTube search scraping API Forked from: <https://github.com/HermanFassett/youtube-scrape> (HermanFassett)
+A YouTube search scraping API Inspired by: <https://github.com/HermanFassett/youtube-scrape> (HermanFassett)

@@ -7,8 +7,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 app.get('/api/search', (req, res) => {
-  scraper
-    .youtube(req.query.q, req.query.page)
+  scraper(req.query.q)
     .then(x => res.json(x))
     .catch(e => res.send(e));
 });
