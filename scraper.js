@@ -52,5 +52,6 @@ const scrapper = async params => {
       .filter(x => x.hasOwnProperty('videoRenderer'))
       .forEach(x => results.push(parser(x.videoRenderer)));
   }
+  return results;
 };
 module.exports = scrapper;
